@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_main_nav"
+    app:startDestination="@id/moviesMainFragment">
+
+    <fragment
+        android:id="@+id/moviesMainFragment"
+        android:name="com.urbanbunnyapps.movierecommendersystem.main.MoviesMainFragment"
+        android:label="Movies"
+        tools:layout="@layout/fragment_movies_main" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.urbanbunnyapps.movierecommendersystem.main.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/recommendMovieFragment"
+        android:name="com.urbanbunnyapps.movierecommendersystem.main.RecommendMovieFragment"
+        android:label="Recommend Movies"
+        tools:layout="@layout/fragment_recommend_movie" />
+</navigation>
